@@ -18,11 +18,11 @@ update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 50 --slave /usr/bi
 gcc --version
 echo "================== Successfully Installed gcc 7.2 ==============="
 
-CLANG_VERSION=4.0.0
+CLANG_VERSION=5.0.0
 echo "==================== Installing clang $CLANG_VERSION ==================="
-wget -nv http://llvm.org/releases/"$CLANG_VERSION"/clang+llvm-"$CLANG_VERSION"-x86_64-linux-gnu-ubuntu-14.04.tar.xz
-tar xf clang+llvm-"$CLANG_VERSION"-x86_64-linux-gnu-ubuntu-14.04.tar.xz
-cd clang+llvm-"$CLANG_VERSION"-x86_64-linux-gnu-ubuntu-14.04
+wget -nv http://releases.llvm.org/"$CLANG_VERSION"/clang+llvm-"$CLANG_VERSION"-linux-x86_64-ubuntu14.04.tar.xz
+tar xf clang+llvm-"$CLANG_VERSION"-linux-x86_64-ubuntu-14.04.tar.xz
+cd clang+llvm-"$CLANG_VERSION"-linux-x86_64-ubuntu-14.04
 cp -R * /usr/local/
 cd ../
 clang --version
