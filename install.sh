@@ -23,8 +23,8 @@ apt-get install autoconf=2.69* automake=1:1.14.1* ccache=3.1.9* libssl-dev:amd64
 CLANG_VERSION=5.0.1
 echo "==================== Installing clang $CLANG_VERSION ==================="
 wget -nv http://releases.llvm.org/"$CLANG_VERSION"/clang+llvm-"$CLANG_VERSION"-x86_64-linux-gnu-ubuntu-14.04.tar.xz
-tar xf clang+llvm-"$CLANG_VERSION"-linux-x86_64-ubuntu14.04.tar.xz
-cd clang+llvm-"$CLANG_VERSION"-linux-x86_64-ubuntu14.04
+tar xf clang+llvm-"$CLANG_VERSION"-x86_64-linux-gnu-ubuntu-14.04.tar.xz
+cd clang+llvm-"$CLANG_VERSION"-x86_64-linux-gnu-ubuntu-14.04
 cp -R * /usr/local/
 cd ../
 clang --version
