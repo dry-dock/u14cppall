@@ -8,15 +8,15 @@ apt-get clean
 apt-get update
 echo "======================== Cleaned apt-get ======================"
 
-echo "======================= Installing gcc 7.2 ======================"
+echo "======================= Installing gcc 7.3======================"
 add-apt-repository ppa:ubuntu-toolchain-r/test
 apt-get update
 apt-get install -y \
-  gcc-7=7.2.0-1ubuntu1~14.04 \
-  g++-7=7.2.0-1ubuntu1~14.04
+  gcc-7=7.3.0-1ubuntu1~14.04 \
+  g++-7=7.3.0-1ubuntu1~14.04
 update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 50 --slave /usr/bin/g++ g++ /usr/bin/g++-7
 gcc --version
-echo "================== Successfully Installed gcc 7.2 ==============="
+echo "================== Successfully Installed gcc 7.3 ==============="
 
 apt-get install autoconf=2.69* automake=1:1.14.1* ccache=3.1.9* libssl-dev:amd64=1.0.1f*
 
