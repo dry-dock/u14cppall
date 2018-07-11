@@ -1,5 +1,6 @@
 #!/bin/bash -e
 
+export DEBIAN_FRONTEND=noninteractive
 echo "========================= Clean apt-get ========================"
 apt-get clean
 mv /var/lib/apt/lists/* /tmp
