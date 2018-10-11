@@ -25,7 +25,7 @@ apt-get install \
   ccache=3.1* \
   libssl-dev:amd64=1.0*
 
-CLANG_VERSION=6.0.1
+CLANG_VERSION=7.0.0
 echo "==================== Installing clang $CLANG_VERSION ==================="
 wget -nv http://releases.llvm.org/"$CLANG_VERSION"/clang+llvm-"$CLANG_VERSION"-x86_64-linux-gnu-ubuntu-14.04.tar.xz
 tar xf clang+llvm-"$CLANG_VERSION"-x86_64-linux-gnu-ubuntu-14.04.tar.xz
